@@ -1,0 +1,34 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+
+# Env files
+.env
+.env.local
+
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Java
+*.class
+*.jar
+*.war
+
+# Maven
+target/
+
+# Temporary files
+*.tmp
+*.swp

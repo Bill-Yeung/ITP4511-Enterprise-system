@@ -1,0 +1,181 @@
+.queue-status {
+  background: #fff;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-xs);
+  overflow: hidden;
+}
+
+.queue-status h2 {
+  color: var(--gray-600);
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--gray-100);
+  background: var(--gray-50);
+  text-transform: uppercase;
+  letter-spacing: .4px;
+}
+
+.status-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 24px;
+}
+
+.status-card {
+  padding: 18px 16px;
+  text-align: center;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  background: var(--gray-50);
+}
+
+.status-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: var(--gray-500);
+  margin-bottom: 10px;
+}
+
+.status-number {
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: 6px;
+  line-height: 1;
+}
+
+.status-card.current .status-number { color: var(--primary); }
+.status-card.position .status-number { color: var(--orange-600); }
+.status-card.waiting .status-number { color: var(--green-600); }
+
+.status-detail {
+  font-size: 12px;
+  color: var(--gray-500);
+}
+
+.queue-status .alert {
+  margin: 0 24px 20px;
+}
+
+.my-tickets {
+  padding: 0 24px 24px;
+}
+
+.my-tickets h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-600);
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  margin: 0 0 12px;
+  padding-top: 18px;
+  border-top: 1px solid var(--gray-100);
+}
+
+.ticket-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 14px;
+  background: #fff;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+}
+
+.ticket-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+
+.ticket-number {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 15px;
+}
+
+.ticket-clinic {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-800);
+}
+
+.ticket-service {
+  color: var(--gray-500);
+  font-size: 12px;
+}
+
+.ticket-status {
+  width: fit-content;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+  border: 1px solid transparent;
+}
+
+.status-waiting { background: var(--orange-50); color: var(--orange-700); border-color: var(--orange-100); }
+.status-called { background: #fefce8; color: #713f12; border-color: #fde68a; }
+.status-in_progress { background: var(--primary-50); color: var(--primary-700); border-color: var(--primary-100); }
+.status-completed { background: var(--green-50); color: var(--green-700); border-color: var(--green-100); }
+.status-skipped { background: var(--gray-100); color: var(--gray-600); border-color: var(--gray-200); }
+.status-cancelled { background: var(--red-50); color: var(--red-700); border-color: var(--red-100); }
+
+.cancel-btn {
+  background: #fff;
+  color: var(--red-600);
+  border: 1px solid var(--gray-300);
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color .15s, border-color .15s;
+}
+
+.cancel-btn:hover {
+  background: var(--red-50);
+  border-color: var(--red-600);
+}
+
+.last-updated {
+  text-align: right;
+  color: var(--gray-500);
+  font-size: 12px;
+  padding: 12px 24px 16px;
+  border-top: 1px solid var(--gray-100);
+}
+
+.rejoin-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.rejoin-btn:hover { background: #1d4ed8; }
+
+@media (max-width: 760px) {
+  .status-info {
+    grid-template-columns: 1fr;
+  }
+
+  .ticket-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

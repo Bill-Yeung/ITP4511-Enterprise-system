@@ -1,0 +1,17 @@
+.notifications-page {
+  padding: 0;
+}
+
+.notifications-container {
+  max-width: 1030px;
+  margin: 0;
+}
+
+.notifications-container h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin: 0 0 24px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--gray-200);
+}
