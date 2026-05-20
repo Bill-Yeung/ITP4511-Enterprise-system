@@ -1,0 +1,4 @@
+username,password,role,full_name,email,phone
+jsmith,password123,Staff,John Smith,jsmith@clinic.hk,91234567
+nurse01,password123,Staff,Mary Wong,mwong@clinic.hk,98765432
+patient_new,password123,Patient,Alice Chan,alice@example.com,61234567

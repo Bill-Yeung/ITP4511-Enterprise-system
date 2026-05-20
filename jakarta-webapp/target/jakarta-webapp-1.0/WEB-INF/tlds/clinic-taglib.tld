@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1"
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                            http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>clinic</short-name>
+    <uri>/WEB-INF/tlds/clinic-taglib.tld</uri>
+
+    <tag>
+        <name>appointmentTable</name>
+        <tag-class>hk.edu.hkiit.jakarta.webapp.tag.AppointmentTableTag</tag-class>
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>appointments</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.util.ArrayList</type>
+        </attribute>
+        <attribute>
+            <name>showStaffActions</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>boolean</type>
+        </attribute>
+        <attribute>
+            <name>actionUrl</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>modalId</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>clinicServices</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.util.ArrayList</type>
+        </attribute>
+        <attribute>
+            <name>doctors</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.util.ArrayList</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>queueTable</name>
+        <tag-class>hk.edu.hkiit.jakarta.webapp.tag.QueueTableTag</tag-class>
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>queues</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.util.ArrayList</type>
+        </attribute>
+        <attribute>
+            <name>isStaff</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>boolean</type>
+        </attribute>
+        <attribute>
+            <name>actionUrl</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>auditLogTable</name>
+        <tag-class>hk.edu.hkiit.jakarta.webapp.tag.AuditLogTableTag</tag-class>
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>logs</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.util.ArrayList</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>utilisationTable</name>
+        <tag-class>hk.edu.hkiit.jakarta.webapp.tag.UtilisationTableTag</tag-class>
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>rows</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.util.ArrayList</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>noShowTable</name>
+        <tag-class>hk.edu.hkiit.jakarta.webapp.tag.NoShowTableTag</tag-class>
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>rows</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.util.ArrayList</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>settingsForm</name>
+        <tag-class>hk.edu.hkiit.jakarta.webapp.tag.SettingsFormTag</tag-class>
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>settings</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.util.ArrayList</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>importResults</name>
+        <tag-class>hk.edu.hkiit.jakarta.webapp.tag.ImportResultsTag</tag-class>
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>results</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.util.ArrayList</type>
+        </attribute>
+        <attribute>
+            <name>success</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>int</type>
+        </attribute>
+        <attribute>
+            <name>failed</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>int</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>notificationList</name>
+        <tag-class>hk.edu.hkiit.jakarta.webapp.tag.NotificationListTag</tag-class>
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>notifications</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.util.ArrayList</type>
+        </attribute>
+    </tag>
+
+</taglib>
